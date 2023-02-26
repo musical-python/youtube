@@ -1,0 +1,6 @@
+autopep8==2.0.1
+musicalbeeps==0.2.9
+numpy==1.24.2
+pycodestyle==2.10.0
+simpleaudio==1.0.4
+tomli==2.0.1
