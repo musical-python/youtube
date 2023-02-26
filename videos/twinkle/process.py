@@ -22,17 +22,17 @@ with open('markov_dict.txt', 'w') as f:
     f.write(str(markov_dict))
 
 
-# print('Generating Markov chain melody.')
-# random.seed(41)
+print('Generating Markov chain melody.')
+random.seed(41)
 
-# current_note = 'G'
-# output_melody = []
-# for _ in range(32):
-#     output_melody.append(current_note)
-#     current_note = random.choice(markov_dict[current_note])
+current_note = 'G'
+output_melody = []
+for _ in range(32):
+    output_melody.append(current_note)
+    current_note = random.choice(markov_dict[current_note])
 
-# output_melody_text = ' '.join(output_melody)
+output_melody_text = ' '.join(output_melody)
 
-# print('Writing out Markov chain melody.')
-# with open('output_melody.txt', 'w') as f:
-#     f.write(output_melody_text + '\n')
+print('Writing out Markov chain melody.')
+with open('output_melody.txt', 'w') as f:
+    f.write(output_melody_text + '\n')
